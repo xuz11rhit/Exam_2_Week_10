@@ -3,8 +3,7 @@
 #   Read each question carefully.
 #   Be sure to commit and push after each question
 #   Be sure to right-click on src, and Mark Directory as Sources root
-#   You will be asked to write 3 functions that demonstrate your
-#   understanding of the concepts covered in class
+#
 #
 ###############################################################################
 import rosegraphics as rg
@@ -22,7 +21,7 @@ def test_draw_a_picture():
     #   This method tests draw_a_picture
     #
     ###############################################################################
-    point1 = rg.Point(100, 100)
+    point1 = rg.Point(200, 200)
     n = 10
     test_window = rg.RoseWindow(500, 500)
 
@@ -34,7 +33,7 @@ def test_draw_a_picture():
     print('###################################################')
     draw_a_picture(point1, n, 'blue', test_window)
 
-    point2 = rg.Point(100, 300)
+    point2 = rg.Point(300, 300)
     n = 4
     #  tests draw_a_picture with point 2, n =4, test_window
     print('###################################################')
@@ -55,13 +54,13 @@ def test_draw_a_picture():
 #     What comes in:
 #       -- An rg.Point.
 #       -- A positive integer n.
-#       -- A fill-color
+#       -- A color
 #       -- An rg.RoseWindow.
 #
 #     What goes out:  Nothing (i.e., None).
 #     Side effects:
 #       Draws an rg.Circle with the given point as the center.
-#       The radius of the rg.Circle is 200 pixels
+#       The radius of the rg.Circle is 100 pixels
 #       Draws an rg.Rectangle with the given point as the center.
 #       The width of the Rectangle is 160 pixels and the height is 80 pixels
 #       Draws n lines from the Center of the Rectangle to the top line
@@ -79,8 +78,39 @@ def test_draw_a_picture():
 #       :type window: rg.RoseWindow
 #   The is_prime function is supplied.  Do NOT change is_prime
 #     """
+###############################################################################
+# TODO: 1  READ the doc-string for the is_prime function defined below.
+# You do NOT need to understand its implementations,
+# just its specification (per the doc-string).
+# You should  ** CALL **  functions as needed in implementing the
+# other functions.  After you have READ this, change its _TODO_ to DONE.
+###############################################################################
+
+
+def is_prime(n):
+    """
+    What comes in:  An integer n >= 1.
+    What goes out:
+      -- Returns True if the given integer is prime,
+         else returns False.
+    Side effects:   None.
+    Examples:
+      -- is_prime(11) returns  True
+      -- is_prime(12) returns  False
+      -- is_prime(2)  returns  True
+    Note: The algorithm used here is simple and clear but slow.
+    """
+    if n == 1:
+        return False
+
+    for k in range(2, (n // 2) + 1):
+        if n % k == 0:
+            return False
+
+    return True
+
 # -------------------------------------------------------------------------
-#  TODO: 1. Implement and test the draw_a_picture function.
+#  TODO: 2. Implement and test the draw_a_picture function.
 #           Tests have been written for you (above in main).
 #  We suggest breaking this into multiple commits.
 #     Can you show the correct circle?
