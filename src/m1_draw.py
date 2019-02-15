@@ -21,7 +21,7 @@ def test_draw_a_picture():
     #   This method tests draw_a_picture
     #
     ###############################################################################
-    point1 = rg.Point(200, 200)
+    point1 = rg.Point(150, 150)
     n = 10
     test_window = rg.RoseWindow(500, 500)
 
@@ -33,7 +33,7 @@ def test_draw_a_picture():
     print('###################################################')
     draw_a_picture(point1, n, 'blue', test_window)
 
-    point2 = rg.Point(300, 300)
+    point2 = rg.Point(350, 350)
     n = 4
     #  tests draw_a_picture with point 2, n =4, test_window
     print('###################################################')
@@ -67,7 +67,8 @@ def test_draw_a_picture():
 #       of the Rectangle that are equally spaced
 #       The color is used as the line colors unless the number of the line
 #       is prime.  If the number of the line is prime,
-#       the color should be 'orange'.
+#       the color should be 'orange'. The fist line drawn should be
+#       the color given because one is not considered prime.
 #
 #       -- There is a 0.5 second pause after each rg.Circle is drawn.
 #       Must  ** NOT close **   the window.
