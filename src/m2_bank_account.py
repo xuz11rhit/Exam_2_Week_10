@@ -112,7 +112,7 @@ def run_test_init():
 # ---------------------------------------------------------------------
 # TODO: 3. Implement your test for the withdraw method below
 # ---------------------------------------------------------------------
-def run_test_withdrawal():
+def run_test_withdraw():
 # Implement at least two tests.  Use copy and paste to speed your coding.
     pass
 
