@@ -28,9 +28,6 @@ class Bank(object):
         Side effects:
           -- Stores the name, initial_deposit, account_number
              in the instance variables
-                 self.name
-                 self.balance
-                 self.account_number
           -- Also initializes other instance variables as needed
               by other methods.
         Examples:
