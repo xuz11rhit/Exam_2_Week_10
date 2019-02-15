@@ -1,10 +1,9 @@
-#  This problem uses a class to create a bank account and simulates
+#  This problem uses a class to create a bank account and simulates some
 #  typical banking practices.  Read the instructions carefully and you will be
 # successful
 def main():
     # when you have initialized your object, use the calls below to test
     #run_test_init()
-    #run_test_deposit()
     #run_test_withdraw()
     return
 
@@ -52,71 +51,44 @@ class Bank(object):
         """
     # ---------------------------------------------------------------------
     # TODO: 1. Implement and test instances of this class.
-    #     See the testing code (below) for more examples.
-    # ---------------------------------------------------------------------
-
-    def deposit(self, amount):
-        """
-        What comes in:
-          -- self
-          -- A float that is the amount to be deposited
-        What is returned:
-          -- A float that is the current balance in the account
-        Side effects:
-          -- Updates the balance
-        Examples:
-          b1.deposit(5000)
-          #   b1.name is 'Brackin'
-          #   b1.balance is 15000.00
-          #   b1. account_number is 'A1'
-
-          b2.deposit(0.30)
-          #   b2.name is 'Lovelace'
-          #   b2.balance is 10.45
-          #   b2.account_number is 'A2'
-
-        """
-    # ---------------------------------------------------------------------
-    # TODO: 4. Implement and test the deposit method
-    #     Implement your own test code, before you write your method
-    #     Insert your test code for deposit, after the test code for init
-    #     Scroll down near the bottom of this screen
-    # ---------------------------------------------------------------------
-    # Put your code below here:
+    #     See the testing code (scroll down near bottom) for more examples.
     # ---------------------------------------------------------------------
 
 
     def withdraw(self, amount):
         """
-    What comes in:
+        What comes in:
         -- self
         -- A float that is the amount to be withdrawn
-    What is returned:
+        What is returned:
         -- An error message if there is not enough money in the account
         -- A float that is the current balance in the account if
            there are sufficient funds
-    Side effects:
+        Side effects:
         -- Updates the balance
-    Examples:
-        b1.withdraw(8000)
-        #   b1.name is 'Brackin'
-        #   b1.balance is 7000.00
-        #   b1. account_number is 'A1'
+        Examples:
+          b1.withdraw(8000)
+          #   b1.name is 'Brackin'
+          #   b1.balance is 2000.00
+          #   b1. account_number is 'A1'
 
-        b2.withdraw(50.25)
-        #   b2.name is 'Lovelace'
-        #   b2.balance is 10.45 (no money is withdrawn)
-        #   b2.account_number is 'A2'
-        #   an error message is printed because there are insufficient funds
+          b2.withdraw(50.25)
+          #   b2.name is 'Lovelace'
+          #   b2.balance is 10.15 (no money is withdrawn)
+          #   b2.account_number is 'A2'
+          #   an error message is printed because there are insufficient funds
         """
     # ---------------------------------------------------------------------
-    # TODO: 6. Implement and test the withdraw method
+    # TODO: 4. Implement and test the withdraw method
     #     Implement your own test code, before you write your method
     #     Insert your test code for withdraw, where indicated
     #     Scroll down near the bottom of this screen
     # ---------------------------------------------------------------------
-
+    #   Put your code for withdraw below
+    #
     # ---------------------------------------------------------------------
+
+    
 def run_test_init():
     """ Tests the   __init__   method of the Bank class. """
     print()
@@ -140,12 +112,11 @@ def run_test_init():
     # TODO: 2. Add two more test cases for your Bank class below.
     # ---------------------------------------------------------------------
 
-
 # ---------------------------------------------------------------------
-# TODO: 3. Implement your test for the deposit method below
+# TODO: 3. Implement your test for the withdraw method below
 # ---------------------------------------------------------------------
-def run_test_deposit():
-#  Implement at least two tests.  Use copy and paste to speed your coding.
+def run_test_withdrawal():
+# Implement at least two tests.  Use copy and paste to speed your coding.
     pass
 
 
